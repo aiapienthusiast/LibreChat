@@ -8,7 +8,12 @@ export { createAdminUsersHandlers } from './users';
 export { createAdminAuditLogHandlers } from './auditLog';
 export { createAdminCodeEnvironmentHandlers } from './code';
 export { buildAuditContext } from './context';
-export { createAdminAuditEmitter, recordSystemAuditEntry, diffRolePermissions } from './audit';
+export {
+  createAdminAuditEmitter,
+  recordSystemAuditEntry,
+  diffRolePermissions,
+  isAuditFailClosed,
+} from './audit';
 export { resolveConfigSecret, redactConfigSecretMaps } from './secrets';
 export type { AdminConfigDeps } from './config';
 export type { AdminLangfuseDeps } from './langfuse';
